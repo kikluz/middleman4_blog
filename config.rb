@@ -6,6 +6,10 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :blog do |blog|
+  # set options on blog
+end
+
 
 import_path File.expand_path('bower_components', app.root)
 
