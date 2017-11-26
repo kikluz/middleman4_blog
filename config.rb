@@ -4,7 +4,9 @@ activate :livereload
 activate :sprockets
 activate :syntax
 # activate :directory_indexes
-
+# extensions
+require 'lib/extensions/permalink.rb'
+activate :permalink
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"

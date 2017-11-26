@@ -3,7 +3,7 @@
 title: mixings
 date: 2017-11-26 05:41 UTC
 tags: 
-
+permalink: Mixing
 ---
 
 

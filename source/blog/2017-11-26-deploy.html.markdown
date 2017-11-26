@@ -3,6 +3,7 @@
 title: deploy
 date: 2017-11-26 00:19 UTC
 tags: 
+permalink: deploy to github/
 
 ---
 
