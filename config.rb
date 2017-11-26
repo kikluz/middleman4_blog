@@ -2,8 +2,8 @@
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 activate :livereload
 activate :sprockets
-
-
+activate :syntax
+# activate :directory_indexes
 
 
 activate :autoprefixer do |prefix|
