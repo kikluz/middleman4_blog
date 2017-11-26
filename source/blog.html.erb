@@ -1,0 +1,36 @@
+---
+layout: article_layout
+title: Middleman Blog
+---
+
+
+
+
+
+<!--  -->
+<div class="container">
+  
+  
+  <i class="fa fa-ravelry" aria-hidden="true"></i>
+
+  <br>
+  <div class="container blog-article">
+	<h1>Blog page</h1>
+
+  <% blog.articles[0...5].each do |article| %>
+  
+    <h1>
+       <%= link_to article.title, article.path, :relative => true %>
+      <time><%= article.date.strftime('%b %e %Y') %></time>
+    </h1>
+    <%= article.summary %>
+    <%= link_to "Read more", article.url, :relative => true %>
+    <!-- <a href="<%= article.url %>">Read more</a> -->
+  
+  <% end %>
+</div>	
+</div>
+
+
+
+

@@ -11,8 +11,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :blog do |blog|
-  # set options on blog
-   blog.layout = "article_layout"
+  blog.prefix = "blog"
 end
 
 
@@ -22,6 +21,7 @@ import_path File.expand_path('bower_components', app.root)
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page "blog/*", :layout => :article_layout
 
 # github project pages deploy
 activate :deploy do |deploy|

@@ -26,27 +26,14 @@ title: Middleman Blog
     </div>
 
     <div class="section_2">
-      <p>
-        The media attribute is used by the grid media mixin to define the local media query. You then pass the map directly in to the media query mixin like this.
-      </p>
+      <h2>
+        <%= link_to 'Blog', '/blog.html', :relative => true %>
+      </h2>
     </div>
   </div>
   <i class="fa fa-ravelry" aria-hidden="true"></i>	
 </div>
 
 
-<div class="container blog-article">
 
-  <% blog.articles[0...5].each do |article| %>
-  <article>
-    <h1>
-       <%= link_to article.title, article.path, :relative => true %>
-      <time><%= article.date.strftime('%b %e %Y') %></time>
-    </h1>
-    <%= article.summary %>
-    <%= link_to "Read more", article.url, :relative => true %>
-    <!-- <a href="<%= article.url %>">Read more</a> -->
-  </article>
-  <% end %>
-</div>
 
