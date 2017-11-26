@@ -12,7 +12,7 @@ end
 
 activate :blog do |blog|
   # set options on blog
-   blog.prefix = "blog"
+   blog.layout = "article_layout"
 end
 
 

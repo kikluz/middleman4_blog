@@ -41,10 +41,8 @@ title: Middleman Blog
   <article>
     <h1>
        <%= link_to article.title, article.path, :relative => true %>
-      
       <time><%= article.date.strftime('%b %e %Y') %></time>
     </h1>
-
     <%= article.summary %>
     <%= link_to "Read more", article.url, :relative => true %>
     <!-- <a href="<%= article.url %>">Read more</a> -->
