@@ -21,6 +21,7 @@ import_path File.expand_path('bower_components', app.root)
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+# set article_layout file for blogging
 page "blog/*", :layout => :article_layout
 
 # github project pages deploy
