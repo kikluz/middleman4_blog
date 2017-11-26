@@ -2,11 +2,12 @@
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 activate :livereload
 activate :sprockets
-activate :syntax
+
 # activate :directory_indexes
 # extensions
 require 'lib/extensions/permalink.rb'
 activate :permalink
+activate :syntax
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
