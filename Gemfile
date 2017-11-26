@@ -5,12 +5,12 @@ gem 'middleman-autoprefixer', '~> 2.7'
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 # deploy to github pages
-gem "rake"
 gem 'middleman-deploy', '2.0.0.pre.alpha'
 gem 'builder', '~> 3.2', '>= 3.2.2'
 gem 'middleman-minify-html', '~> 3.4', '>= 3.4.1'
 gem 'middleman-livereload', '~> 3.4', '>= 3.4.6'
 gem "middleman-blog"
+gem  "nokogiri"
 
 gem 'bitters'
 gem 'bourbon'
