@@ -81,13 +81,14 @@ title: Middleman Blog
   <% blog.articles[0...5].each do |article| %>
   <article>
     <h1>
-      <a href="<%= article.url %>"><%= article.title %></a>
+       <%= link_to article.title, article.path, :relative => true %>
+      
       <time><%= article.date.strftime('%b %e %Y') %></time>
     </h1>
 
     <%= article.summary %>
-
-    <a href="<%= article.url %>">Read more</a>
+    <%= link_to "Read more", article.url, :relative => true %>
+    <!-- <a href="<%= article.url %>">Read more</a> -->
   </article>
   <% end %>
 </div>

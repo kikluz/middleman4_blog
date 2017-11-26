@@ -2,7 +2,7 @@
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 activate :livereload
 activate :sprockets
-require 'nokogiri'
+
 
 
 
