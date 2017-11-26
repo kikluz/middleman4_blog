@@ -2,6 +2,10 @@
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 activate :livereload
 activate :sprockets
+require 'nokogiri'
+
+
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -36,6 +40,7 @@ configure :build do
 	# Name of the project where you working on
 	set :site_url, "/quique_blog"
 end
+
 
 
 
