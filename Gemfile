@@ -21,3 +21,4 @@ gem 'middleman-sprockets', '~> 4.0.0.rc.1'
 gem 'middleman-compass', '>= 4.0.0'
 gem 'byebug'
 gem "middleman-syntax"
+gem 'redcarpet'

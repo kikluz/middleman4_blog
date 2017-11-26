@@ -8,6 +8,7 @@ activate :sprockets
 require 'lib/extensions/permalink.rb'
 activate :permalink
 activate :syntax
+set :markdown_engine, :kramdown
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"

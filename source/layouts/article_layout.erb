@@ -1,15 +1,26 @@
 <% wrap_layout :layout do %>
-
-<div class="contaiter">
-	<% wrap_layout :layout do %>
-	<article>
-		<%= yield %>
-	</article>
-	<% end %>
-</div>
-<div class="container">
-	<%= link_to 'back', '/blog.html', :relative => true %>
-	<%= link_to 'Home', '/index.html', :relative => true %>
-</div>
+<main role="main">
+	<div class="contaiter">
+		<% wrap_layout :layout do %>
+		<article>
+			<%= yield %>
+		</article>
+		<% end %>
+	</div>
+	<div class="container">
+		<%= link_to 'back', '/blog.html', :relative => true %>
+		<%= link_to 'Home', '/index.html', :relative => true %>
+	</div>
+</main>
 
 <% end %>
+
+
+
+     
+        
+        
+  
+ 
+     
+    

@@ -19,11 +19,7 @@ h2,h3,h4,h5,h5,p {
 	-webkit-font-smoothing: antialiased;
 	color: hsla(0,0%,100%,.9);
 }
-body, article {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 2em;
-}
+
 a {
 	text-decoration: none;
 	a:hover {
@@ -164,7 +160,6 @@ hr {
 
 
 // blog testing 
-/* blog */
 article.post {
   h1 {
     font-size:3em;
@@ -179,9 +174,9 @@ article.post {
   }
 }
 .blog-article {
-  article { margin-bottom: 4em;}
+  article { margin-bottom: 3em;}
   h2 {
-    font-size: 2.2em;
+    font-size: 2.0em;
     margin-bottom: .5em;
     line-height: 0.7em;
   }
@@ -195,7 +190,7 @@ article.post {
   }
 }
  // code highlighting 
-// <%= Rouge::Themes::ThankfulEyes.render(:scope => '.highlight') %> 
+// <%= Rouge::Themes::Base16::Solarized.render(:scope => '.highlight') %>
 .highlight {
   padding: 1em;
 }
