@@ -12,7 +12,7 @@ body {
   padding: $padding 0;
 }
 // primary color
-h2,h3,h4,h5,h5,p {
+h1,h2,h3,h4,h5,h5,p {
 	font-family: "Muli",avenir,"helvetica neue"
 	,helvetica,ubuntu,
 	roboto,noto,"segoe ui",arial,sans-serif;
@@ -33,7 +33,7 @@ a {
 		margin-left: auto;
 		font-size: 1.4em;
 		text-align: center;
-		color: #999;
+		// color: #999;
 		font-weight: 200;
 	}
 }
@@ -186,4 +186,13 @@ time {color: #fbc547;}
 }
 .article_page {
   padding-top: 3em;
+  
+  
 }
+hr {
+  border-bottom: 1px solid #16a6b6;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 120px;
+  }
