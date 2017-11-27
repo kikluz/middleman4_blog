@@ -72,8 +72,9 @@ hr {
 	}
 }
 
-@include grid-media($my-desktop-grid) {
+
 	.section_2 {
+    @include grid-media($my-desktop-grid) {
 		@include grid-column(6);
 	}
 }
@@ -173,6 +174,7 @@ article.post {
     margin:0;
   }
 }
+time {color: #fbc547;}
 .blog-article {
   article { margin-bottom: 3em;}
   h2 {
@@ -180,21 +182,8 @@ article.post {
     margin-bottom: .5em;
     line-height: 0.7em;
   }
-  p {
-    margin-top: 0;
-    font-size: 1.5em;
-    line-height: 1em;
-  }
-  .date {
-    // font-size:1.5em;
-  }
+  
 }
- // code highlighting 
-// <%= Rouge::Themes::Base16::Solarized.render(:scope => '.highlight') %>
-.highlight {
-  padding: 1em;
-}
-pre {
-  overflow: auto;
-overflow-y: hidden;
+.article_page {
+  padding-top: 3em;
 }
