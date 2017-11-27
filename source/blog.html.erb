@@ -3,7 +3,8 @@ title: Middleman Blog
 ---
 <!--  -->
   
-  <div class="container">
+<div class="container">
+  <div class="article_page">
     <h1>Blog page</h1>
     <% blog.articles[0...5].each do |article| %>
     <h1>
@@ -14,6 +15,7 @@ title: Middleman Blog
     <%= link_to "Read more", article.url, :relative => true %>
     <% end %>
   </div>
+</div>
 
 
 
