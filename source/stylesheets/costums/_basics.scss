@@ -198,8 +198,9 @@ hr {
   width: 120px;
 }
 
-// splip panel in text-wrap: none;
-
+//-------------------------------------------------
+// splip panel with display flex
+//-------------------------------------------------
 div {
   display: flex;
   flex-direction: column;
@@ -214,12 +215,12 @@ h1 {
 /* Pattern styles */
 .container-panel {
   @include grid-media($my-mobile-grid) {
-   content: "";
-  clear: both;
-  display: table;
-  display: flex;
+    content: "";
+    clear: both;
+    display: table;
+    display: flex;
 
-}
+  }
 }
 
 .left-half {
