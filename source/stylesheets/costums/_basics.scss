@@ -197,3 +197,39 @@ hr {
   margin-left: auto;
   width: 120px;
 }
+
+// splip panel in text-wrap: none;
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Pattern styles */
+.container-panel {
+  @include grid-media($my-mobile-grid) {
+   content: "";
+  clear: both;
+  display: table;
+  display: flex;
+
+}
+}
+
+.left-half {
+  background-color: #102635;
+  flex: 1;
+  padding: 1rem;
+}
+
+.right-half {
+  background-color: #142f42;
+  flex: 1;
+  padding: 1rem;
+}
