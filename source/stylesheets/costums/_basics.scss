@@ -1,8 +1,8 @@
 
 * * { box-sizing: border-box; }
 body {
-	background-color: #0a1923;
-	height: 100%;
+  background-color: #0a1923;
+  height: 100%;
 }
 
 
@@ -14,70 +14,70 @@ body {
 
 // primary color
 h1,h2,h3,h4,h5,h5,p {
-	font-family: "Muli",avenir,"helvetica neue"
-	,helvetica,ubuntu,
-	roboto,noto,"segoe ui",arial,sans-serif;
-	-webkit-font-smoothing: antialiased;
-	color: hsla(0,0%,100%,.9);
+  font-family: "Muli",avenir,"helvetica neue"
+  ,helvetica,ubuntu,
+  roboto,noto,"segoe ui",arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: hsla(0,0%,100%,.9);
 }
 
 a {
-	text-decoration: none;
-	a:hover {
-		color: #548;
-    	background-color: transparent;
-	}
+  text-decoration: none;
+  a:hover {
+    color: #548;
+    background-color: transparent;
+  }
 }
 .welcome-info {
-	p {
-		margin-right: auto;
-		margin-left: auto;
-		font-size: 1.4em;
-		text-align: center;
-		// color: #999;
-		font-weight: 200;
-	}
+  p {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.4em;
+    text-align: center;
+// color: #999;
+font-weight: 200;
+}
 }
 .element {
-	content: "";
-	clear: both;
-	display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .title {
-	line-height: 1.25;
-	color: #fbc547;
-	font-size: 3rem;
-	padding: 1em;
-    text-align: center;
-	@include grid-media($my-desktop-grid) {
-		text-align: center;
-		padding: 80px
-	}
+  line-height: 1.25;
+  color: #fbc547;
+  font-size: 3rem;
+  padding: 1em;
+  // text-align: center;
+  @include grid-media($my-desktop-grid) {
+    // text-align: center;
+    padding: 80px
+  }
 }
 
 
 hr {
-	background-color: #ebb951;
-	clear: both;
+  background-color: #ebb951;
+  clear: both;
 }
 // Using Neat grid from myneat.cscss file
 .container {
-	@include grid-column(12, $neat-grid);
+  @include grid-column(12, $neat-grid);
 }
 
 // Custom grid for mobile from myneat.cscss file
 .section_1 {
-	@include grid-media($my-desktop-grid) {
-		@include grid-column(6);
-	}
+  @include grid-media($my-desktop-grid) {
+    @include grid-column(6);
+  }
 }
 
 
-	.section_2 {
-    @include grid-media($my-desktop-grid) {
-		@include grid-column(6);
-	}
+.section_2 {
+  @include grid-media($my-desktop-grid) {
+    @include grid-column(6);
+  }
 }
 
 
@@ -85,8 +85,8 @@ hr {
 .accordion-container{
   position: relative;
   @include grid-media($my-desktop-grid) {
-  width: 500px;
-}
+    width: 500px;
+  }
   height: auto;
   margin: 20px auto;
 }
@@ -145,16 +145,16 @@ hr {
 //-------------------------------------------------
 .cards {
   @include grid-media($my-mobile-grid) {
-  margin: 0 -10px;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+    margin: 0 -10px;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .cards li {
-      background-color: #0c2333;
-    border: 1px solid #385469;
+  background-color: #0c2333;
+  border: 1px solid #385469;
   margin: 0 10px 20px 10px;
   padding: 10px;
   border-radius: 5px;
@@ -170,10 +170,10 @@ article.post {
   }
   .date {
     color: #BB5111;
-    // font-weight: bold;
-    // font-size:1.5em;
-    margin:0;
-  }
+// font-weight: bold;
+// font-size:1.5em;
+margin:0;
+}
 }
 time {color: #fbc547;}
 .blog-article {
@@ -183,17 +183,17 @@ time {color: #fbc547;}
     margin-bottom: .5em;
     line-height: 0.7em;
   }
-  
+
 }
 .article_page {
   padding-top: 3em;
-  
-  
+
+
 }
 hr {
   border-bottom: 1px solid #16a6b6;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 120px;
-  }
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 120px;
+}
