@@ -5,7 +5,7 @@ title: Middleman Blog
   
 <div class="container">
   <div class="article_page">
-    <h1>Blog page</h1>
+    
     <% blog.articles[0...5].each do |article| %>
     <h1>
       <%= link_to article.title, article.path, :relative => true %>
