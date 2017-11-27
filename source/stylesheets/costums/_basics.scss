@@ -3,6 +3,9 @@
 body {
   background-color: #0a1923;
   height: 100%;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
@@ -11,7 +14,9 @@ body {
 @mixin section_padding($padding: 1em) {
   padding: $padding 0;
 }
-
+//-------------------------------------------------
+// basic of html
+//-------------------------------------------------
 // primary color
 h1,h2,h3,h4,h5,h5,p {
   font-family: "Muli",avenir,"helvetica neue"
@@ -21,27 +26,25 @@ h1,h2,h3,h4,h5,h5,p {
   color: hsla(0,0%,100%,.9);
 }
 
-a {
-  text-decoration: none;
-  a:hover {
-    color: #548;
-    background-color: transparent;
-  }
+hr {
+  border-bottom: 1px solid #16a6b6;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 120px;
 }
+a { text-decoration: none; }
+//-------------------------------------------------
+// Split panel
+//-------------------------------------------------
 .welcome-info {
   p {
     margin-right: auto;
     margin-left: auto;
     font-size: 1.4em;
     text-align: center;
-// color: #999;
-font-weight: 200;
-}
-}
-.element {
-  content: "";
-  clear: both;
-  display: table;
+    font-weight: 200;
+  }
 }
 
 .title {
@@ -49,119 +52,39 @@ font-weight: 200;
   color: #fbc547;
   font-size: 3rem;
   padding: 1em;
-   text-align: center;
+  text-align: center;
+  a {color: #fbc547;}
   @include grid-media($my-desktop-grid) {
-    // text-align: center;
     padding: 80px
   }
 }
 
 
-hr {
-  background-color: #ebb951;
-  clear: both;
-}
-// Using Neat grid from myneat.cscss file
+//-------------------------------------------------
+// Using grid system (Neat)
+//-------------------------------------------------
 .container {
   @include grid-column(12, $neat-grid);
 }
 
 // Custom grid for mobile from myneat.cscss file
-.section_1 {
-  @include grid-media($my-desktop-grid) {
-    @include grid-column(6);
-  }
-}
+// .section_1 {
+//   @include grid-media($my-desktop-grid) {
+//     @include grid-column(6);
+//   }
+// }
 
 
-.section_2 {
-  @include grid-media($my-desktop-grid) {
-    @include grid-column(6);
-  }
-}
+// .section_2 {
+//   @include grid-media($my-desktop-grid) {
+//     @include grid-column(6);
+//   }
+// }
 
 
-
-.accordion-container{
-  position: relative;
-  @include grid-media($my-desktop-grid) {
-    width: 500px;
-  }
-  height: auto;
-  margin: 20px auto;
-}
-.accordion-container > h2{
-  text-align: center;
-  color: #fff;
-  padding-bottom: 5px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #ddd;
-}
-.set{
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-color: #f5f5f5;
-}
-.set > a{
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #555;
-  font-weight: 600;
-  border-bottom: 1px solid #ddd;
-  -webkit-transition:all 0.2s linear;
-  -moz-transition:all 0.2s linear;
-  transition:all 0.2s linear;
-}
-.set > a i{
-  position:relative;
-  float: right;
-  margin-top:4px;
-  color: #666;
-}
-.set > a.active{
-  background-color:#3399cc;
-  color: #fff;
-}
-.set > a.active i{
-  color: #fff;
-}
-.content{
-  position:relative;
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  display:none;
-}
-.content p{
-  padding: 10px 15px;
-  margin: 0;
-  color: #333;
-}
 //-------------------------------------------------
-// how to use grids for cards
+// Blog section
 //-------------------------------------------------
-.cards {
-  @include grid-media($my-mobile-grid) {
-    margin: 0 -10px;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-.cards li {
-  background-color: #0c2333;
-  border: 1px solid #385469;
-  margin: 0 10px 20px 10px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-
-// blog testing 
 article.post {
   h1 {
     font-size:3em;
@@ -170,10 +93,8 @@ article.post {
   }
   .date {
     color: #BB5111;
-// font-weight: bold;
-// font-size:1.5em;
-margin:0;
-}
+    margin:0;
+  }
 }
 time {color: #fbc547;}
 .blog-article {
@@ -183,19 +104,10 @@ time {color: #fbc547;}
     margin-bottom: .5em;
     line-height: 0.7em;
   }
-
 }
+
 .article_page {
   padding-top: 3em;
-
-
-}
-hr {
-  border-bottom: 1px solid #16a6b6;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  width: 120px;
 }
 
 //-------------------------------------------------
@@ -204,7 +116,7 @@ hr {
 div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
 }
 
 h1 {
